@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: blueviolet;
+        }
+        button {
+            padding: 10px 20px;
+            margin:10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <title>JavaScript addEventListener() Hands-On</title>
+</head>
+<body>
+    <h1>JavaScript addEventListener() Hands-On</h1>
+    
+    <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button>
+    <button id="btn3">Button 3</button>
+    <script>
+        function showAlert1() {
+            alert("Button 1 was clicked!");
+        }
+
+        function showAlert2() {
+            alert("Button 2 was clicked!");
+        }
+
+        function showAlert3() {
+            alert("Button 3 was clicked!");
+        }
+        document.getElementById('btn1').addEventListener('click', showAlert1);
+        document.getElementById('btn2').addEventListener('click', showAlert2);
+        document.getElementById('btn3').addEventListener('click', showAlert3);
+    </script>
+</body>
+</html>
+
+
